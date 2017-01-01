@@ -1,0 +1,7 @@
+<span>
+    <span *ngFor = 'let star of stars, let i=index' class='fa' 
+    [ngClass]='star.class' 
+    [style.color]='star.color' 
+    [style.cursor]='star.cursor' 
+    (click)='setRating(i)'></span>
+</span>
